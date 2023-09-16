@@ -1,0 +1,123 @@
+/* Store Global Variables */
+:root {
+    /* Colors used in site */
+    --siteAlt    : #fcfcfc;
+    --siteMain   : #84b1e5;
+    --menuMain   : #FAD5C8;
+    --Background : #bcbd39;
+}
+
+/* Normalize Global Size Values */
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--Background);
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper {
+    margin-top: 8rem;
+    background-color: var(--menuMain);
+    padding: 3.5rem;
+}
+
+p {
+    font-style: italic;
+    color: rgb(65, 59, 59);
+    margin: 0.5rem 0;
+}
+
+ol {
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+ol li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+ol li:nth-child(even) {
+    background: #ddbebe;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #e08181;
+}
+
+.button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #0093D5;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+input {
+    padding: 0.5rem;
+}
+
+form {
+    display: inline-block;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#clear-button {
+    background-color: #5dbc5d;
+}
+
+#empty-button {
+    background-color: #bd3c40;
+}
+
+@media only screen and (min-width: 1400px) {
+    .main-wrapper {
+        width: 50%;
+    }
+    .main-wrapper input {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .main-wrapper {
+        width: 75%;
+    }
+    .main-wrapper input {
+        width: 400px;
+    }
+}
